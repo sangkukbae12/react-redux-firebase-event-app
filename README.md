@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :mountain_bicyclist: 리액트 이벤트 웹앱
 
-## Available Scripts
+> 이벤트 개설 및 등록된 이벤트를 참가할 수 있는 소셜 이벤트 어플리케이션입니다. :smile:
 
-In the project directory, you can run:
 
-### `yarn start`
+**메인 페이지**   
+![](https://i.imgur.com/3f2sDpI.jpg)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**이벤트 생성 페이지**   
+![](https://i.imgur.com/DPlzpxP.jpg)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**이벤트 리스트 페이지**   
+![](https://i.imgur.com/xtueWxn.jpg)
 
-### `yarn test`
+**이벤트 상세 페이지**   
+![](https://i.imgur.com/KCozPj3.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:gem: 데모: [https://react-event-app-ab08f.firebaseapp.com/](https://react-event-app-ab08f.firebaseapp.com/)
 
-### `yarn build`
+## :sparkles: 기능
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `Firebase authentication`을 사용하여 로그인 및 회원 가입
+- `Facebook` 및 `Google` 소셜 로그인 추가
+- `Google Map`과 장소 자동 완성 기능 통합(`Places API`, `Geocoding API`)
+- `Drag and Drop`으로 프로필 사진 업로드, 업로드 전 이미지 크기 조정 및 자르기
+- `Live Chatting` 시스템 추가
+- `Firestore`로 페이징, 정렬 및 필터링
+- `Infinite scroll` 기능 추가
+- `Firestore` 데이터베이스 설계
+- `Redux Form`을 사용하여 재사용 가능한 Form 컴포넌트 생성
+- `Sematic UI`로 반응형 웹 디자인
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## :ballot_box_with_check: 설치 및 실행
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. 저장소 내려받기
 
-### `yarn eject`
+```bash
+git clone https://github.com/sangkukbae/react-redux-firebase-chat-app.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. 패키지 설치하기
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install or yarn add
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Localhost 에서 실행하기
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```bash
+npm start or yarn start
+```
